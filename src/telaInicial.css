@@ -1,0 +1,212 @@
+@import './App.css';
+
+.pagina-inicial {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.header-inicial {
+  background-color: var(--button);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-portal {
+  color: white;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.usuario-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nome-usuario {
+  font-weight: 500;
+}
+
+.btn-sair-user {
+  padding: 8px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.conteudo-principal {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h2 {
+  color: var(--h1);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.pesquisa-section {
+  margin-bottom: 50px;
+}
+
+.pesquisa-box {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  gap: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.input-pesquisa {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-pesquisa:focus {
+  background-color: var(--input-bg);
+}
+
+.botao-buscar {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--button);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.acoes-section {
+  margin-bottom: 50px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card-acao {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px 30px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-icone {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.card-acao h3 {
+  color: var(--h1);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card-acao p {
+  color: #666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info-section {
+  margin-top: 60px;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.info-card h4 {
+  color: var(--h1);
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.info-card p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .titulo-portal {
+    font-size: 1.5rem;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  .pesquisa-box {
+    flex-direction: column;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .info-cards {
+    grid-template-columns: 1fr;
+  }
+}

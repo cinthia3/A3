@@ -1,0 +1,17 @@
+@import './App.css';
+
+.container h2 {
+    margin: 10px;
+}
+
+.login-link {
+    text-decoration: none;
+    color: var(--button);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+    color: var(--button);
+}
